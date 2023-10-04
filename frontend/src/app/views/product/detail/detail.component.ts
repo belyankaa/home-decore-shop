@@ -23,6 +23,7 @@ export class DetailComponent implements OnInit {
     public products: ProductType[] = [];
     public product!: ProductType;
     public serverStaticPath: string = environment.serverStaticPath;
+    public isLogged: boolean = this.authService.getIsLoggedIn();
 
     public customOptions: OwlOptions = {
         loop: true,

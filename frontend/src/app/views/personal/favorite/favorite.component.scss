@@ -54,7 +54,7 @@
           margin-left: 24px;
           font-size: 20px;
           color: $gray-text-color;
-          width: 567px;
+          width: 420px;
           margin-right: 20px;
         }
 
@@ -63,14 +63,27 @@
           font-weight: 600;
           font-style: normal;
           color: $gray-text-color;
-          width: 100px;
-          margin-right: 193px;
+          width: 120px;
+          margin-right: 150px;
         }
 
         .favorite-product-action {
+          width: 270px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
 
           .button {
-            width: 160px;
+            width: 180px;
+            margin-right: 20px;
+
+            &.button-transparent {
+              width: 220px;
+            }
+
+            &.button-in-cart {
+              width: 220px;
+            }
           }
         }
 

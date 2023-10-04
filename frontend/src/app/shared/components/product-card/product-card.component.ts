@@ -21,6 +21,8 @@ export class ProductCardComponent implements OnInit {
   public serverStaticPath: string = environment.serverStaticPath
   public count: number = 1;
 
+  public isLogged: boolean = this.authService.getIsLoggedIn();
+
   @Input() isLight: boolean = false;
   @Input() countInCart: number | undefined = 0;
 
